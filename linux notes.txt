@@ -1,0 +1,43 @@
+cd . (current directory). This is the directory you are currently in.
+cd .. (parent directory). Takes you to the directory above your current.
+cd ~ (home directory). This directory defaults to your “home directory”. Such as /home/pete.
+cd - (previous directory). This will take you to the previous directory you were just at.
+
+
+
+ls -R: recursively list directory contents
+ls -a: to see the hidden files(alongside with the non-hidden files)
+ls -l: detailed list of files in a long format(file permissions, number of links, owner name, owner group, file size, timestamp of last modification, and file/directory name)
+NOTE: We can use both flags at the same time. The order of the flags determines which order it goes in. So it doesn't matter if you do -la or -al.
+
+
+$ touch: is used for creating new files. ie: touch newfile.txt
+$ file: shows a description of the file's contents. (you also need to type file's extension.)
+$ cat: it's for reading files. (not reccomended for big ones) and can be used for multiple files; ie: $ cat dogfile birdfile
+$ less: it's for reading files as well, but for page by page. (is used for very big files.)
+
+$ history: a history of the commands that you previously entered
+$ clear: it's obvious.
+
+$ cp: for copying files. ie: cp aa.txt /home/samil --> it'll copy aa.txt to samil directory.
+			     cp *.txt /home/samil --> this will copies every file that have .txt extension to the target dir.
+			     cp -r File/ /home/samil --> This is what we use when we want to copy a dir that has dirs and other files within.
+	NOTE:  if you copy a file over to a directory that has the same filename, the file will be overwritten with whatever you are copying over.
+	we can use cp -i to prompt us before overwriting a file.
+
+$ mv oldfile newfile - for renaming (both files and directories)
+$ mv file2 /home/samil - for moving a file
+$ mv file1 file2 /home/samil - for moving multiple files
+NOTE: like cp, it has the same -i flag. the usage is also the same.
+
+$ mkdir dirname1 dirname2 : for creating one/more than one directories 
+$ mkdir -p books/hemingway/favorites : for creating directories with subdirectories.
+
+$ rm file1: removes file1 (no trashcan, so be careful)
+$ rm -r directory: removes directory.
+$ rmdir directory: removes directory (doesn't work if the directory is not empty.)
+
+$ find . -name filename or dirname: gives you the path to the file or to the directory.
+
+$ help echo/logout/pwd/etc. : helps to use a command or usages of flags.
+$ man ls/cd/and all of them : it's a manual for every command.
